@@ -62,8 +62,8 @@ class OneSignalUtils {
    */
   public static function is_admin_user() {
     // Only administrators are allowed to do this, see:
-    //   https://codex.wordpress.org/Roles_and_Capabilities#delete_users
-    return current_user_can('delete_users');
+    //   https://codex.wordpress.org/Roles_and_Capabilities#activate_plugins
+    return current_user_can('activate_plugins');
   }
 }
 ?>
